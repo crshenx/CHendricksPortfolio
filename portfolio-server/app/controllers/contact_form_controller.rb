@@ -21,8 +21,7 @@ class ContactFormController < ApplicationController
       end
 
       def allow_cross_origin_requests
-        headers['Access-Control-Allow-Origin'] = '*'
-        headers['Access-Control-Allow-Methods'] = 'POST, OPTIONS'
+        headers['Access-Control-Allow-Methods'] = 'POST'
         headers['Access-Control-Allow-Headers'] = 'Content-Type'
       end
 end

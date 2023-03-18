@@ -51,11 +51,11 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
-    domain: "http://localhost:3000/",
+    domain: "exmaple.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: "crshenx@gmail.com",
-    password: "evwxhpadwpoxhvua",
+    user_name: ENV['SMTP_USER'],
+    password: ENV['SMTP_PASSWORD'],
     open_timeout:         5,
     read_timeout:         5 
 }

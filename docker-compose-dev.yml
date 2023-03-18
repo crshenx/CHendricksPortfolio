@@ -1,0 +1,15 @@
+version: "3"
+services:
+  rails:
+    image: crshenx/portfolio-rails
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./portfolio-server
+    env_file:
+      - ./portfolio-server/.env
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./portfolio-server/:/usr/src/app
+
+    
