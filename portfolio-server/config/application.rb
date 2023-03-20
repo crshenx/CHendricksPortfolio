@@ -13,7 +13,7 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 # require "action_cable/engine"
 require "rails/test_unit/railtie"
-require 'dotenv/load'
+# require 'dotenv/load'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -24,7 +24,7 @@ module PortfolioServer
     config.load_defaults 7.0
 
     #development env file
-    Dotenv::Railtie.load
+    # Dotenv::Railtie.load
 
     # Configuration for the application, engines, and railties goes here.
     #
