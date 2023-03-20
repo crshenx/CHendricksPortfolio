@@ -1,0 +1,10 @@
+version: "3"
+services:
+  rails:
+    image: crshenx/portfolio-rails
+    ports:
+      - "80:80"
+    environment:
+      - RAILS_ENV=production
+      - SMTP_USER=$SMTP_USER
+      - SMTP_PASSWORD=$SMTP_PASSWORD

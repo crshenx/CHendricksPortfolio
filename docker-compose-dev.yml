@@ -1,7 +1,7 @@
 version: "3"
 services:
   rails:
-    image: crshenx/portfolio-rails
+    image: crshenx/portfolio-rails-dev
     build:
       dockerfile: Dockerfile.dev
       context: ./portfolio-server
