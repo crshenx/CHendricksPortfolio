@@ -3,7 +3,7 @@ services:
   rails:
     image: crshenx/portfolio-server
     ports:
-      - "80:3000"
+      - "3000:80"
     environment:
       - RAILS_ENV=production
       - SMTP_USER=$SMTP_USER
