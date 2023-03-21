@@ -19,7 +19,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t crshenx/portfolio-server:latest .
+          docker build -t crshenx/portfolio-server:latest --build-args RAILS_MASTER_KEY=${{secrests.RAILS_MASTER_KEY}} .
         working-directory: ./portfolio-server
 
       - name: Push Docker image to Docker Hub
