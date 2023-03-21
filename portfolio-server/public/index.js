@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         message: message,
       };
       console.log(payload, "payload");
-      fetch("http://localhost:3000/contact_form/submit", {
+      fetch("/contact_form/submit", {
         method: "POST",
         mode: "cors",
         headers: {
