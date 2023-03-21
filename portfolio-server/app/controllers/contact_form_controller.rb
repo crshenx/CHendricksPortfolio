@@ -2,7 +2,7 @@ class ContactFormController < ApplicationController
     before_action :allow_cross_origin_requests
 
       def submit
-        ContactFormMailer.with(payload: payload).contact_email.deliver_later
+        ContactFormMailer.with(payload: payload).contact_email.deliver_now
         render json: { message: "Email sent successfully." }, status: :ok
       rescue => e
         render json: { message: "Email failed to send. #{e.message}" }, status: :internal_server_error
